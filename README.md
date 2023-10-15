@@ -1,24 +1,8 @@
-# vueprojects
+# Домашнє завдання з теми "Вступ до Vue.js"
 
-## Project setup
-```
-yarn install
-```
+Створити html сторінку з VUEJS3 і блок div, в якому розмістити чотири елементи input
+(для введення наступних даних: Прізвище, Ім'я, По-батькові, дата народження) а також один елемент
+button.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Після введення всіх даних та натискання кнопки button за допомогою функції JS alert вивести
+усі введені дані на екран.
