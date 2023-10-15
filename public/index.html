@@ -1,17 +1,80 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js intro hw</title>
+    <script src="https://unpkg.com/vue@3.2.6/dist/vue.global.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #app {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px -10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <input type="text" v-model="lastName" placeholder="Прізвище">
+            <input type="text" v-model="firstName" placeholder="Ім'я">
+            <input type="text" v-model="patronymic" placeholder="По-батькові">
+            <input type="date" v-model="birthdate" placeholder="Дата народження">
+        </div>
+        <button @click="showData">Вивести дані</button>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    lastName: "",
+                    firstName: "",
+                    patronymic: "",
+                    birthdate: "",
+                };
+            },
+            methods: {
+                showData() {
+                    const data = `Прізвище: ${this.lastName}\nІм'я: ${this.firstName}\nПо-батькові: ${this.patronymic}\nДата народження: ${this.birthdate}`;
+                    alert(data);
+                },
+            },
+        });
+
+        app.mount('#app');
+    </script>
+</body>
 </html>
