@@ -44,6 +44,12 @@ export default {
         }, 1000);
       }
     },
+    stopTimer() {
+      if (this.isRunning) {
+        clearInterval(this.timerInterval);
+        this.isRunning = false;
+      }
+    } ,
     beforeUnmount() {
       if (this.timerInterval) {
         clearInterval(this.timerInterval);
