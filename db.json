@@ -1,0 +1,17 @@
+{
+    "timers": [
+      {
+        "name": "Europe/Kiev",
+        "offset": 3
+      },
+      {
+        "name": "America/Washington",
+        "offset": -5
+      },
+      {
+        "name": "Asia/Hong_Kong",
+        "offset": 8
+      }
+    ]
+  }
+  
