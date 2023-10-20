@@ -1,24 +1,12 @@
-# vueprojects
+# Домашня робота з теми "Маршрутизація"
 
-## Project setup
-```
-yarn install
-```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+На базі домашнього завдання з таймерами додати роутінг. Сторінки відкривати без перезавантаження.
+Створити меню з 3 посилань з таким вмістом:
 
-### Compiles and minifies for production
-```
-yarn build
-```
+    1. Перше посилання: ім'я – Home – виводить просто текст – заголовок з вітанням (типу This is world times service);
 
-### Lints and fixes files
-```
-yarn lint
-```
+    2. Друге посилання: ім'я – Ukraine – виводить один компонент час із ДЗ5 з Українським часом;
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    3. Третє посилання: ім'я - Other - виводить на основі масиву оголошеного в елементі state набір компонентів час з ДЗ5
+       мінімум із трьома годинниками (Вашингтон, UTC, ГонКонг);
