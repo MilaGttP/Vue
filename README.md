@@ -1,24 +1,9 @@
-# vueprojects
+# Домашнє завдання з теми "HTTP запити"
 
-## Project setup
-```
-yarn install
-```
+Додати до домашнього завдання з таймером такий функціонал:
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. Створити вручну файл db.json, який міститиме дані необхідні для роботи таймерів наприклад (назва часового поясу та зміщення).
+   
+2. Розгорнути простий локальний сервер HTTP за допомогою бібліотеки json-server.
+   
+3. Завантажувати дані по таймерах із файлу db.json звертаючись за допомогою AJAX запитів будь-якої бібліотеки.
